@@ -18,6 +18,6 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore .\MassTransitDemo.sln
+      run: dotnet restore MassTransitDemo.sln
     - name: Build
       run: dotnet build .\MassTransitDemo.csproj --no-restore
