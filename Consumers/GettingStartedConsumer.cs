@@ -18,6 +18,7 @@ public class GettingStartedConsumer : IConsumer<GettingStarted>
     public Task Consume(ConsumeContext<GettingStarted> context)
     {
         _logger.LogInformation("Received Text: {Text}", context.Message.Value);
+        
         return Task.CompletedTask;
     }
 }
